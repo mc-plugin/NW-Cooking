@@ -1,0 +1,68 @@
+# Default Configurations
+
+# useEnergyMin = Default minimum amount of energy used when food is cooked.
+useEnergyMin: 50
+# useEnergyMax = Default maximum amount of energy used when food is cooked.
+useEnergyMax: 500
+maxTableLevel: 5
+energyDiscountRateExpression: 'normal(1 / (level + 4) * 5)'
+
+# maxEnergy = Max energy of Cooking table
+maxEnergy: 20000
+# maxEnergy = Default energy of Cooking table
+defaultEnergy: 10000
+repairAmount: 2500
+
+# defaultContainerSize = initialize container size.
+defaultContainerSize: 27
+containerUpgradeSize: 9
+containerMaxLevel: 10
+
+# Messages
+
+# Command
+message.command.edit.create: "&7[ &8id: &e%1s&7 ]&a 가 성공적으로 생성되었습니다."
+message.command.edit.delete: "&7[ &8id: &e%1s&7 ]&c 가 성공적으로 삭제되었습니다."
+
+message.command.edit.rename: "&7[ &8id: &e%1s&7 ]&a 의 이름이 성공적으로 변경되었습니다. ( %2s -> %3s )"
+message.command.edit.recipenotfound: "&7[ &8id: &e%1s&7 ]&c 를 가진 레시피가 존재하지 않습니다."
+
+# Container
+message.container.max_level: "&c이 보관함은 이미 &4최대 레벨&c을 달성하였습니다!"
+message.container.level_up: "&a요리보관함 레벨이 상승했습니다! &7( &6%1s &f-> &e%2s &7)"
+message.container.no_slot: "&c인벤토리 공간이 부족합니다."
+
+# Table
+message.table.success.message: "&2%1s&a(의) 요리가 성공했습니다!"
+message.table.success.special: "&2%1s&a(의) 요리가 대성공했습니다!"
+
+message.table.fail.message: "&4%1s&c(의) 요리가 실패했습니다.."
+message.table.fail.special: "&4%1s&c(의) 요리가 대실패했습니다.."
+
+message.table.startcook: "&6' %1s &6' &e요리를 시작했습니다. &6잔여 화력 : %2s&c[-%3s]"
+message.table.cancel: "&a현재 요리 중인 요리를 취소했습니다."
+
+message.table.charge_energy: "&a요리작업대의 화력을 충전했습니다. &7( &4%1s &f-> &c%2s &7)"
+message.table.level_up: "&a요리작업대의 레벨이 상승했습니다! &7( &4%1s &f-> &c%2s &7)"
+
+message.table.already_cooking: "&c해당 요리작업대는 요리가 진행되고 있습니다. &4%1s &c뒤에 시도해 주세요."
+message.table.full_energy: "&c해당 요리작업대는 이미 최대 화력입니다."
+message.table.max_level: "&c해당 요리작업대는 이미 &4최대 레벨&c을 달성하였습니다!"
+message.table.no_energy: "&c요리제작대의 화력이 부족합니다! ( 필요 최소화력: %1sE&4/&c%2sE )"
+message.table.container_not_enough: "&c음식보관함의 공간이 부족하거나, 진행중인 요리가 보관함보다 많습니다!"
+
+# Editor
+message.editor.not_decimal: "&c숫자를 입력 해 주세요!"
+message.editor.must_non_negative: "&c0 보다 큰 숫자를 입력 해 주세요."
+
+message.editor.time.input: "&a소요 시간을 채팅으로 입력해 주세요. &2(90 -> 1:30)"
+message.editor.time.success: "&a'%1s'&f 의 &e조리시간&f은 &b%2s &f로 설정되었습니다."
+
+message.editor.special.ratio.input: "&a보상의 확률을 채팅으로 입력해 주세요. &2(0.0 ~ 100.0)"
+message.editor.special.ratio.range: "&c보상 확률은 100 이상일 수 없습니다."
+message.editor.special.ratio.success: "&a' %1s '&f 의 &b특별보상 확률&f은 &e%2s% &f로 설정되었습니다."
+
+message.editor.special.multiply.input: "&a보상의 배율을 채팅으로 입력해 주세요."
+message.editor.special.multiply.success: "&a' %1s '&f 의 &c특별보상 배수&f는 &ex%2s &f로 설정되었습니다."
+
+message.editor.timeout: "&c입력시간이 초과 되었습니다."

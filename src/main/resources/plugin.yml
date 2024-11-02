@@ -1,0 +1,24 @@
+name: NW-Cooking
+version: '${version}'
+main: com.neoworld.cooking.NWCooking
+api-version: '1.20'
+
+libraries:
+  - net.objecthunter:exp4j:0.4.8
+
+commands:
+  admingive:
+    description: Your description
+    usage: /<command>
+    aliases:
+      - 요리관리지급
+  container:
+    description: Your description
+    usage: /<command>
+    aliases:
+      - 요리보관함
+  recipemanager:
+    description: Your description
+    usage: /<command>
+    aliases:
+      - 요리관리
